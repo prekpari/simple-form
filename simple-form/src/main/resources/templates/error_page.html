@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Error Page</title>
+</head>
+<body>
+<h2 th:if="${email_count > 0}">The entered email is already registered. Please enter new email.</h2>
+<h2 th:if="${email_count == 0}">You entered incorrect data! Please retry your action again </h2>
+<a href="/register">Navigate to registration | </a>
+<a href="/login">Navigate to login</a>
+
+</body>
+</html>
